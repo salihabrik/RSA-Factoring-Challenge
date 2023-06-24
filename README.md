@@ -1,12 +1,18 @@
-RSA is the most widely used public-key cryptography algorithm in the world. It is also one of the most secure, with only a few known attacks that can be used to break it. but this is by design and not by accident.
+# RSA-Factoring-Challenge
+![](https://cdn.hashnode.com/res/hashnode/image/unsplash/FnA5pAzqhMM/upload/v1664867430622/yP5GJxzOL.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp)
+# RSA is
+the most widely used public-key cryptography algorithm in the world. It is also one of the most secure, with only a few known attacks that can be used to break it. but this is by design and not by accident.
 
 One of the most interesting things about RSA is that it can be used for more than just encryption. It can also be used for digital signatures and for key exchange.
 
-The RSA algorithm is a public-key cryptosystem. This means that there are two keys, a public key, and a private key. The public key can be known by everyone and is used for encryption. The private key is known only by the owner and is used for decryption. The RSA algorithm is asymmetric, which means that the encryption and decryption keys are different.
+# The RSA algorithm 
+is a public-key cryptosystem. This means that there are two keys, a public key, and a private key. The public key can be known by everyone and is used for encryption. The private key is known only by the owner and is used for decryption. The RSA algorithm is asymmetric, which means that the encryption and decryption keys are different.
 
-The RSA algorithm is based on the fact that it is very difficult to factorize large numbers. The security of the RSA algorithm, therefore, depends on the fact that the factorization of large numbers is a difficult problem.
+# The RSA algorithm is
+based on the fact that it is very difficult to factorize large numbers. The security of the RSA algorithm, therefore, depends on the fact that the factorization of large numbers is a difficult problem.
 
-RSA is a relatively old algorithm, having been developed in the 1970s by Ron Rivest, Adi Shamir, and Len Adleman. It is based on the difficulty of factoring large numbers.
+# RSA 
+is a relatively old algorithm, having been developed in the 1970s by Ron Rivest, Adi Shamir, and Len Adleman. It is based on the difficulty of factoring large numbers.
 
 To understand how RSA works, let's look at an example. Suppose we want to send a message that says "Hello, world!" to our friend. We can use RSA to encrypt the message so that only our friends can read it.
 
@@ -24,19 +30,19 @@ The last step is to compute d such that ed = 1 mod φ(n). d is called the privat
 
 Now we have everything we need to encrypt our message. To encrypt our message, we compute the following:
 
-c = me mod n
+>> c = me mod n
 
-c is the ciphertext and m is the message we want to encrypt. To decrypt the ciphertext, we compute the following:
+>> c is the ciphertext and m is the message we want to encrypt. To decrypt the ciphertext, we compute the following:
 
-m = cd mod n
+>>m = cd mod n
 
-m is the decrypted message.
+>>m is the decrypted message.
 
 Let's try this with our example message. Suppose our public key is(e, n) = (5, 143). Our private key is d = 23.
 
 To encrypt our message, we compute:
 
-Note that m = message (that will be converted to an integer with padding). In our case, we will use a random number. However, if you are interested to know how that is done, here is the process
+>> Note that m = message (that will be converted to an integer with padding). In our case, we will use a random number. However, if you are interested to know how that is done, here is the process
 
 To encrypt a message, each letter in the message is converted into a number using a scheme such as ASCII. Then, for each number, it is raised to the encryption key power and divided by the modulus. The remainder of this division is the encrypted number. To decrypt a message, each encrypted number is raised to the decryption key power and divided by the modulus. The remainder of this division is the decrypted number. This number is then converted back into a letter using the same scheme as before.
 
@@ -44,26 +50,26 @@ To encrypt a message, each letter in the message is converted into a number usin
 COPY
 
 COPY
-c = m^e mod n
+>> c = m^e mod n
 
-c = 88^5 mod 143
+>> c = 88^5 mod 143
 
-c = 9408 mod 143
+>> c = 9408 mod 143
 
-c = 104
+>> c = 104
 To decrypt the ciphertext, we compute:
 
 
 COPY
 
 COPY
-m = c^d mod n
+>> m = c^d mod n
 
-m = 104^23 mod 143
+>> m = 104^23 mod 143
 
-m = 9408 mod 143
+>> m = 9408 mod 143
 
-m = 88
+>> m = 88
 We can see that our message has been successfully encrypted and decrypted.
 
 RSA is used in a wide variety of applications, including email, file sharing, and secure communications. It is also used in many different protocols, such as SSL/TLS, which is used to secure communications on the Internet.
