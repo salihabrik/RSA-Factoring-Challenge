@@ -1,5 +1,27 @@
-#!/usr/bin/python3
-from factors_functions import *
-if __name__ == '__main__':
+import sys
 
-    print(unix_time(print_factor)
+def factorize(num):
+    factors = []
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            factors.append((i, num // i))
+    return factors
+
+def main():
+    if len(sys.argv) != 2:
+        print("Usage: factors <file>")
+        return
+
+    file_path = sys.argv[1]
+
+    with open(file_path, 'r') as file:
+        for line in file:
+            num = int(line.strip())
+            factor_pairs = factorize(num)
+            for pair in factor_pairs:
+                p, q = pair
+                print(f"{num}={p}*{q}")
+
+if __name__ == "__main__":
+    main()
+
